@@ -6,13 +6,14 @@ import SignUp from './components/SignUp.jsx'
 import HomePage from './components/HomePage.jsx'
 import Layout from './components/Layout.jsx'
 import ShopList from './components/ShopList.jsx'
+import GoogleMap from "./components/GoogleMap.jsx";
 
 function App() {
     return (
         <div>
         <Routes>
           <Route path='/' element={<Layout/>} />
-          <Route index element={<SignIn />} />
+          <Route index element={<GoogleMap />} />
           <Route path='/home' element={<HomePage/>}/>
           <Route path='/signup' element={<SignUp/>}/>
           <Route path='/shoplist' element={<ShopList/>}/>
