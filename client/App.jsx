@@ -13,7 +13,7 @@ function App() {
         <div>
         <Routes>
           <Route path='/' element={<Layout/>} />
-          <Route index element={<GoogleMap />} />
+          <Route index element={<GoogleMap center={{lat: -34.397, lng: 150.644}} zoom={8}/>} />
           <Route path='/home' element={<HomePage/>}/>
           <Route path='/signup' element={<SignUp/>}/>
           <Route path='/shoplist' element={<ShopList/>}/>
